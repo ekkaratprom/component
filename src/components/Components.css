@@ -1,0 +1,193 @@
+.roundButton {
+  height: 60px;
+  width: 100%;
+  border-width: 0;
+  border-style: none;
+  background: #1D4859;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  /* identical to box height */
+}
+
+.roundButton:focus {
+  outline: none;
+}
+
+.searchField {
+  height: 100%;
+  width: 100%;
+  border-width: 0;
+  border-style: none;
+  color: #FFFFFF;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 12px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  /* identical to box height */
+}
+
+.searchField .search-label {
+  position: relative;
+  border-radius: 30px;
+}
+
+.searchField input {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  border-width: 0;
+  border-style: none;
+  border-radius: 30px;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.searchField:focus {
+  outline: none;
+}
+
+.searchField .search-icon-container {
+  overflow: hidden;
+  cursor: pointer;
+  padding: 12px 20px 8px 12px;
+  background-color: #555;
+}
+
+.searchField .search-icon {
+  font-size: 24px;
+}
+
+.teamMemberName {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 0.2;
+  /* identical to box height */
+  color: #404040;
+}
+
+.team-member-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-left: 20%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team-member-container {
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.teamMemberPosition {
+  /* Co-founder */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  /* identical to box height */
+  color: #404040;
+}
+
+.image-container {
+  width: 200px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.teamImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+/* Container */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Column */
+.column {
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+  width: 33.33333%;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .column {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Components.css.map */
