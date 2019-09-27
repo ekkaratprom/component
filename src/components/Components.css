@@ -1,4 +1,4 @@
-.roundButton {
+.roundButton, .round-corner-button {
   height: 60px;
   width: 100%;
   border-width: 0;
@@ -17,7 +17,7 @@
   /* identical to box height */
 }
 
-.roundButton:focus {
+.roundButton:focus, .round-corner-button:focus {
   outline: none;
 }
 
@@ -275,6 +275,10 @@
 
 .title-field .title {
   padding: 6px 0;
+}
+
+.round-corner-button {
+  border-radius: 6px;
 }
 
 /* Column */

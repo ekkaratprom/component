@@ -10,7 +10,7 @@ import SearchField from './components/SearchField';
 import SideBar from './components/SideBar';
 import TextField from './components/TextField'
 import TitleField from './components/TitleField'
-
+import RoundCornerButton from './components/RoundCornerButton'
 
 function App() {
   return (
@@ -33,10 +33,6 @@ function App() {
      <SearchField icon={iconSearch}/>
     </div> */}
 
-    
-    <TitleField title="Name">
-      <TextField placeholder="Project name" />
-    </TitleField>
     <SideBar/>
 
 
