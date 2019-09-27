@@ -8,7 +8,8 @@ import member2 from './components/details/img/member2.png';
 import member3 from './components/details/img/member3.png';
 import SearchField from './components/SearchField';
 import SideBar from './components/SideBar';
-
+import TextField from './components/TextField'
+import TitleField from './components/TitleField'
 
 
 function App() {
@@ -33,8 +34,10 @@ function App() {
     </div> */}
 
     
+    <TitleField title="Name">
+      <TextField placeholder="Project name" />
+    </TitleField>
     <SideBar/>
-    
 
 
  

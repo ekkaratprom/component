@@ -243,6 +243,40 @@
   box-flex: 1;
 }
 
+.text-field {
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-style: none;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.text-field::-webkit-input-placeholder {
+  color: #101010;
+  opacity: 0.53;
+}
+
+.text-field:-ms-input-placeholder {
+  color: #101010;
+  opacity: 0.53;
+}
+
+.text-field::-ms-input-placeholder {
+  color: #101010;
+  opacity: 0.53;
+}
+
+.text-field::placeholder {
+  color: #101010;
+  opacity: 0.53;
+}
+
+.title-field .title {
+  padding: 6px 0;
+}
+
 /* Column */
 .column {
   -ms-flex-preferred-size: 33.33333%;
