@@ -19,9 +19,11 @@ const TeamMember = ({ image, name, role }) => (
 )
 
 TeamMember.propTypes = {
+
   image: PropTypes.object,
   name: PropTypes.object,
   role: PropTypes.object
+  
 }
 
 export default TeamMember

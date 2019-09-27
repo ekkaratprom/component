@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 import search from './../components/details/icon/iconSearch.svg'
+
 const SearchField = ({ icon, onClick }) => (
 
   <div className="searchField">
@@ -14,12 +15,19 @@ const SearchField = ({ icon, onClick }) => (
 
       />
     </label>
-      <div className="search-icon-container">
-        <img src={search} className="search-icon" alt="iconSearch" onClick={onClick} />
-      </div>
+    <div className="search-icon-container">
+
+  
+        <img src={search} className="search-icon" alt="iconSearch" onClick={onClick} /> 
+        
+        
+        
 
 
   </div>
+
+
+  </div >
 
 )
 

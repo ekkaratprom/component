@@ -7,13 +7,15 @@ import member1 from './components/details/img/member1.png';
 import member2 from './components/details/img/member2.png';
 import member3 from './components/details/img/member3.png';
 import SearchField from './components/SearchField';
+import SideBar from './components/SideBar';
 
 
 
 function App() {
-  return (<div>
+  return (
+  <div>
 
-    <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
+    {/* <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
 
     <div className="team-member-list">
       <TeamMember name="tanamet" role="CEO" image={member1} />
@@ -28,7 +30,11 @@ function App() {
 
     <div style={{width:"200px" , padding:"20px"}}>
      <SearchField icon={iconSearch}/>
-    </div>
+    </div> */}
+
+    
+    <SideBar/>
+    
 
 
  

@@ -1,19 +1,19 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 
-function RoundButton(props) {
-  return (
-    <button className="roundButton" onClick={props.onClick} style={props.style}>
-        {props.children}
+const RoundButton = ({onClick, children,style}) => (
+  
+    <button className="roundButton" onClick={onClick} style={style}>
+        {children}
     </button>
-  );
-}
+  
+)
 
 RoundButton.propTypes = {
 
     onClick: PropTypes.func,
     style: PropTypes.object
-
+    
 }
 
-export default RoundButton;
+export default RoundButton
