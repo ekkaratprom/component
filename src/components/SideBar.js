@@ -32,14 +32,13 @@ const SideBar = ({ app, template, setting, onClick, children }) => (
         </div>
 
         <div>
-          <span className="left-menu">
-            
-              left
+          <span className="left-side">        
+              Application
             
 
           </span>
 
-          <span className="right-menu">
+          <span className="right-side">
             
               right
             
