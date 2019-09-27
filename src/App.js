@@ -8,8 +8,9 @@ import member2 from './components/details/img/member2.png';
 import member3 from './components/details/img/member3.png';
 import SearchField from './components/SearchField';
 import SideBar from './components/SideBar';
-
-
+import TextField from './components/TextField'
+import TitleField from './components/TitleField'
+import RoundCornerButton from './components/RoundCornerButton'
 
 function App() {
   return (
@@ -32,9 +33,7 @@ function App() {
      <SearchField icon={iconSearch}/>
     </div> */}
 
-    
     <SideBar/>
-    
 
 
  
