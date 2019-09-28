@@ -16,6 +16,7 @@ import Layout from './components/Layout';
 import Modal from './components/Modal';
 import RatioField from './components/RatioField';
 import SelectionField from './components/SelectionField';
+import ProjectList from './components/ProjectList';
 
 function App() {
 
@@ -42,7 +43,7 @@ function App() {
      <SearchField icon={iconSearch}/>
     </div> */}
 
-      <SelectionField title="hello" active />
+      <ProjectList items={[{title:"hello" } , {title:"test"}]} onSelect={(id,item)=> console.log(id,item)} onMore={(id,item)=> console.log(id,item)} />
 
     </div>
     
