@@ -2,7 +2,7 @@ import React , {useState} from 'react';
 import './components/Components.css';
 import TeamMember from './components/TeamMember';
 import RoundButton from './components/RoundButton';
-import iconSearch from './components/details/icon/iconSearch.png';
+import iconSearch from './components/details/icon/next.png';
 import member1 from './components/details/img/member1.png';
 import member2 from './components/details/img/member2.png';
 import member3 from './components/details/img/member3.png';
