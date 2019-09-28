@@ -13,10 +13,12 @@ import TitleField from './components/TitleField'
 import RoundCornerButton from './components/RoundCornerButton'
 import Content from './components/Content'
 import Layout from './components/Layout';
+import Modal from './components/Modal';
 
 function App() {
 
   let [size , setSize] = useState("0")
+  let [open , setOpen] = useState(true)
 
   return (
   <Layout>
@@ -47,6 +49,9 @@ function App() {
     <RoundButton onClick={()=>{ setSize(size === "0" ? "200" : "0")  }} >open</RoundButton>
 
     </Content>
+    <Modal show={open} onClose={()=>setOpen(false)}>
+      test
+    </Modal>
 
   </Layout>
     
