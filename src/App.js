@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import './components/Components.css';
 import TeamMember from './components/TeamMember';
 import RoundButton from './components/RoundButton';
@@ -11,10 +11,19 @@ import SideBar from './components/SideBar';
 import TextField from './components/TextField'
 import TitleField from './components/TitleField'
 import RoundCornerButton from './components/RoundCornerButton'
+import Content from './components/Content'
+import Layout from './components/Layout';
+import Modal from './components/Modal';
+import RatioField from './components/RatioField';
+import SelectionField from './components/SelectionField';
 
 function App() {
+
+  let [size , setSize] = useState("0")
+  let [open , setOpen] = useState(true)
+
   return (
-  <div>
+    <div>
 
     {/* <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
 
@@ -33,14 +42,9 @@ function App() {
      <SearchField icon={iconSearch}/>
     </div> */}
 
-    <SideBar/>
+      <SelectionField title="hello" active />
 
-
- 
-  </div>
-    
-    
-      
+    </div>
     
   );
 }
