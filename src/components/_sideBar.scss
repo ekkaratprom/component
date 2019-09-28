@@ -1,13 +1,4 @@
-.body {
-    height: 1084px;
-    width: 100%;
-    position: relative;  
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 37px;
-    /* identical to box height */
+.sidebar-container{
 
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
 
@@ -64,22 +55,14 @@
 .nav {
     background: #ffffff;
     height: 100%;
-    width: 361px;
-    flex: 0 100px;
-    -webkit-box-flex:  0;
-    -moz-box-flex:  0;
-    -ms-box-flex:  0;
-    box-flex:  0;  
-    
- 
+    z-index: 5;
+    overflow: scroll;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+
+    &.shadow {
+
+        box-shadow: 10px 0px 12px -5px rgba(0,0,0,0.41);
+
+    }
+
 }
-
-
-.main {
-    background: aliceblue;
-    flex: 1;
-    box-flex: 1;  
-}
-
-
-

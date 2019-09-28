@@ -1,0 +1,25 @@
+
+.project-list-container{
+    background-color: gray;
+
+    .project-list-header{
+
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-between;
+        padding: 18px;
+
+    }
+
+    .project-list-item{
+        display: flex;
+        justify-content: space-between;
+        padding: 18px;
+
+        span{
+            margin-left: 12px;
+        }
+
+    }
+
+}
