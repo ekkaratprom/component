@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const SideBar = ({ app, template, setting, onClick, children }) => (
+const SideBar = ({ style , children }) => (
 
-  <div className="sidebar-container" style={{width:"100px"}}>
+  <div className="sidebar-container" style={{width:"200px" , ...style}}>
     {children}
   </div>
 
