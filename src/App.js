@@ -23,7 +23,7 @@ import SchemaTable from './components/SchemaTable';
 function App() {
 
   let [size , setSize] = useState("200")
-  let [open , setOpen] = useState(true)
+  let [open , setOpen] = useState(false)
 
   return (
     <div>
@@ -46,13 +46,20 @@ function App() {
      <SearchField icon={iconSearch}/>
     </div>
 
+    <TitleField title="What size of your dick">
+      <TextField placeholder="enter size of your dick" />
+    </TitleField>
+    <TitleField title="Application name">
+      <TextField placeholder="enter application si i here ...." />
+    </TitleField>
+
     <Modal onClose={()=>setOpen(false)} show={open}>test</Modal>
     <Layout>
       <SideBar shadow width={size+"px"}>
-        <RoundButton onClick={()=>setOpen(true)} >Generate</RoundButton>
+        <RoundButton onClick={()=>setOpen(true)} >show modal</RoundButton>
       </SideBar>
       <Content>
-        <RoundButton onClick={()=>{setSize(size==="200" ? "0" : "200")}} >Generate</RoundButton>
+        <RoundButton onClick={()=>{setSize(size==="200" ? "0" : "200")}} >toggle sidebar</RoundButton>
       </Content>
     </Layout>
 
