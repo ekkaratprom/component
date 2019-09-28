@@ -175,6 +175,11 @@
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
 
+.sidebar-container.shadow {
+  -webkit-box-shadow: 10px 0px 12px -5px rgba(0, 0, 0, 0.41);
+          box-shadow: 10px 0px 12px -5px rgba(0, 0, 0, 0.41);
+}
+
 .text-field {
   background-color: #f2f2f2;
   padding: 12px;

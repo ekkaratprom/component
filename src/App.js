@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import './components/Components.css';
 import TeamMember from './components/TeamMember';
 import RoundButton from './components/RoundButton';
@@ -15,6 +15,9 @@ import Content from './components/Content'
 import Layout from './components/Layout';
 
 function App() {
+
+  let [size , setSize] = useState("0")
+
   return (
   <Layout>
 
@@ -36,51 +39,12 @@ function App() {
     </div> */}
 
 
-    <SideBar>
-    <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
-      <RoundButton >test</RoundButton>
+    <SideBar shadow width={size + "px"}>
+      hello
     </SideBar>
     <Content>
 
-      test
+    <RoundButton onClick={()=>{ setSize(size === "0" ? "200" : "0")  }} >open</RoundButton>
 
     </Content>
 
