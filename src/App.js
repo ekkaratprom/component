@@ -11,10 +11,12 @@ import SideBar from './components/SideBar';
 import TextField from './components/TextField'
 import TitleField from './components/TitleField'
 import RoundCornerButton from './components/RoundCornerButton'
+import Content from './components/Content'
+import Layout from './components/Layout';
 
 function App() {
   return (
-  <div>
+  <Layout>
 
     {/* <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
 
@@ -33,11 +35,56 @@ function App() {
      <SearchField icon={iconSearch}/>
     </div> */}
 
-    <SideBar/>
 
+    <SideBar>
+    <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+      <RoundButton >test</RoundButton>
+    </SideBar>
+    <Content>
 
- 
-  </div>
+      test
+
+    </Content>
+
+  </Layout>
     
     
       

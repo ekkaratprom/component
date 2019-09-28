@@ -166,81 +166,15 @@
   margin: 0 auto;
 }
 
-.body {
-  height: 1084px;
-  width: 100%;
-  position: relative;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 37px;
-  /* identical to box height */
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
-  background-color: #F1F2F7;
-}
-
-.site-name {
-  color: #1D4859;
-  padding: 12px 0 0 12px;
-}
-
-.site-name .app-name {
-  font-size: 18px;
-  padding: 12px 0 0 12px;
-}
-
-.left-menu {
-  background-color: #F5F5F5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: s;
-      -ms-flex-align: s;
-          align-items: s;
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.container {
+.sidebar-container {
+  background-color: #f1f1f1;
   height: 100%;
-  width: 361;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: box;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -ms-box-orient: horizontal;
-  box-orient: horizontal;
-}
-
-.nav {
-  background: #ffffff;
-  height: 100%;
-  width: 361px;
-  -ms-flex: 0 100px;
-      flex: 0 100px;
-  -webkit-box-flex: 0;
-  -ms-box-flex: 0;
-  box-flex: 0;
-}
-
-.main {
-  background: aliceblue;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  box-flex: 1;
+  z-index: 5;
+  overflow: scroll;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .text-field {
@@ -279,6 +213,23 @@
 
 .round-corner-button {
   border-radius: 6px;
+}
+
+.content-container {
+  background-color: green;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: scroll;
+}
+
+.layout-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 /* Column */
