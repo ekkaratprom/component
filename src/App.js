@@ -14,6 +14,7 @@ import RoundCornerButton from './components/RoundCornerButton'
 import Content from './components/Content'
 import Layout from './components/Layout';
 import Modal from './components/Modal';
+import RatioField from './components/RatioField';
 
 function App() {
 
@@ -40,23 +41,9 @@ function App() {
      <SearchField icon={iconSearch}/>
     </div> */}
 
-
-    <SideBar shadow width={size + "px"}>
-      hello
-    </SideBar>
-    <Content>
-
-    <RoundButton onClick={()=>{ setSize(size === "0" ? "200" : "0")  }} >open</RoundButton>
-
-    </Content>
-    <Modal show={open} onClose={()=>setOpen(false)}>
-      test
-    </Modal>
+    <RatioField title="hello" />
 
   </Layout>
-    
-    
-      
     
   );
 }

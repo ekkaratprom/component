@@ -268,6 +268,69 @@
   display: none;
 }
 
+.ratio-field-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+}
+
+.ratio-field-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.ratio-field-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2196F3;
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+}
+
+.ratio-field-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  /* Style the indicator (dot/circle) */
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2196F3;
+}
+
+.ratio-field-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.ratio-field-container input:checked ~ .checkmark {
+  background-color: #eee;
+  /* Show the indicator (dot/circle) when checked */
+}
+
+.ratio-field-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
 /* Column */
 .column {
   -ms-flex-preferred-size: 33.33333%;
