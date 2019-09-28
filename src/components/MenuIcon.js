@@ -11,11 +11,9 @@ function MenuIcon(props) {
         <img src={props.image} className="iconImage" alt="icon1" />
       </div>
 
-      <div style={{width:"100%" , padding:"2px"}}>
-
-        <p className="iconName">{props.name}</p>
-        
-      </div>
+      <span>
+        {props.name} 
+      </span>
 
     </div>
     

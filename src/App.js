@@ -16,16 +16,19 @@ import Layout from './components/Layout';
 import Modal from './components/Modal';
 import RatioField from './components/RatioField';
 import SelectionField from './components/SelectionField';
+import ProjectList from './components/ProjectList';
+import MenuIcon from './components/MenuIcon';
+import SchemaTable from './components/SchemaTable';
 
 function App() {
 
-  let [size , setSize] = useState("0")
-  let [open , setOpen] = useState(true)
+  let [size , setSize] = useState("200")
+  let [open , setOpen] = useState(false)
 
   return (
     <div>
 
-    {/* <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
+    <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
 
     <div className="team-member-list">
       <TeamMember name="tanamet" role="CEO" image={member1} />
@@ -36,13 +39,40 @@ function App() {
 
     <div  style={{width:"200px" , padding:"20px"}}>
       <RoundButton >Generate</RoundButton>
+      <RoundCornerButton>Create</RoundCornerButton>
     </div>
 
     <div style={{width:"200px" , padding:"20px"}}>
      <SearchField icon={iconSearch}/>
-    </div> */}
+    </div>
 
-      <SelectionField title="hello" active />
+    <TitleField title="What size of your dick">
+      <TextField placeholder="enter size of your dick" />
+    </TitleField>
+    <TitleField title="Application name">
+      <TextField placeholder="enter application si i here ...." />
+    </TitleField>
+
+    <Modal onClose={()=>setOpen(false)} show={open}>test</Modal>
+    <Layout>
+      <SideBar shadow width={size+"px"}>
+        <RoundButton onClick={()=>setOpen(true)} >show modal</RoundButton>
+      </SideBar>
+      <Content>
+        <RoundButton onClick={()=>{setSize(size==="200" ? "0" : "200")}} >toggle sidebar</RoundButton>
+      </Content>
+    </Layout>
+
+    <RatioField title="import socket.io" />
+    <RatioField title="import kuy yai mak" />
+    <SelectionField title="String" />
+    <SelectionField title="Number" active />
+
+      <ProjectList items={[{title:"hello" } , {title:"test"}]} onSelect={(id,item)=> console.log(id,item)} onMore={(id,item)=> console.log(id,item)} />
+
+      <MenuIcon image={iconSearch} name="test" />
+
+      <SchemaTable onClickAdd={()=>console.log("make it fuck")} items={[["id" , "id" , <button>delete</button>],["user" , "string" , <button>delete</button>],["name" , "string" , <button>delete</button>]]} />
 
     </div>
     
