@@ -420,6 +420,57 @@
   color: blue;
 }
 
+.schema-table {
+  border-collapse: collapse;
+  margin: 25px 0px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.schema-table th, .schema-table td {
+  padding: 12px 15px;
+}
+
+.schema-table th.create-button, .schema-table td.create-button {
+  cursor: pointer;
+}
+
+.schema-table th:last-of-type, .schema-table td:last-of-type {
+  min-width: 200px;
+}
+
+.schema-table th:last-of-type:not(.create-button), .schema-table td:last-of-type:not(.create-button) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.schema-table thead tr {
+  background-color: #009879;
+  color: white;
+  text-align: left;
+  font-size: bold;
+}
+
+.schema-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.schema-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.schema-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
 /* Column */
 .column {
   -ms-flex-preferred-size: 33.33333%;

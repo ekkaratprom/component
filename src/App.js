@@ -28,25 +28,25 @@ function App() {
   return (
     <div>
 
-    {/* <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
+    <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
 
     <div className="team-member-list">
       <TeamMember name="tanamet" role="CEO" image={member1} />
       <TeamMember name="ekkarat" role="COO" image={member2} />
       <TeamMember name="isoon" role="CTO" image={member3} />
       <TeamMember name="pk" role="Invester" image={member1} />
-    </div> */}
+    </div>
 
-    {/* <div  style={{width:"200px" , padding:"20px"}}>
+    <div  style={{width:"200px" , padding:"20px"}}>
       <RoundButton >Generate</RoundButton>
       <RoundCornerButton>Create</RoundCornerButton>
-    </div> */}
+    </div>
 
-    {/* <div style={{width:"200px" , padding:"20px"}}>
+    <div style={{width:"200px" , padding:"20px"}}>
      <SearchField icon={iconSearch}/>
-    </div> */}
+    </div>
 
-    {/* <Modal onClose={()=>setOpen(false)} show={open}>test</Modal>
+    <Modal onClose={()=>setOpen(false)} show={open}>test</Modal>
     <Layout>
       <SideBar shadow width={size+"px"}>
         <RoundButton onClick={()=>setOpen(true)} >Generate</RoundButton>
@@ -54,18 +54,18 @@ function App() {
       <Content>
         <RoundButton onClick={()=>{setSize(size==="200" ? "0" : "200")}} >Generate</RoundButton>
       </Content>
-    </Layout> */}
+    </Layout>
 
-    {/* <RatioField title="import socket.io" />
+    <RatioField title="import socket.io" />
     <RatioField title="import kuy yai mak" />
     <SelectionField title="String" />
-    <SelectionField title="Number" active /> */}
+    <SelectionField title="Number" active />
 
-      {/* <ProjectList items={[{title:"hello" } , {title:"test"}]} onSelect={(id,item)=> console.log(id,item)} onMore={(id,item)=> console.log(id,item)} /> */}
+      <ProjectList items={[{title:"hello" } , {title:"test"}]} onSelect={(id,item)=> console.log(id,item)} onMore={(id,item)=> console.log(id,item)} />
 
-      {/* <MenuIcon image={iconSearch} name="test" /> */}
+      <MenuIcon image={iconSearch} name="test" />
 
-      <SchemaTable />
+      <SchemaTable onClickAdd={()=>console.log("make it fuck")} items={[["id" , "id" , <button>delete</button>],["user" , "string" , <button>delete</button>],["name" , "string" , <button>delete</button>]]} />
 
     </div>
     
