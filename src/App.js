@@ -17,10 +17,12 @@ import Modal from './components/Modal';
 import RatioField from './components/RatioField';
 import SelectionField from './components/SelectionField';
 import ProjectList from './components/ProjectList';
+import MenuIcon from './components/MenuIcon';
+import SchemaTable from './components/SchemaTable';
 
 function App() {
 
-  let [size , setSize] = useState("0")
+  let [size , setSize] = useState("200")
   let [open , setOpen] = useState(true)
 
   return (
@@ -33,17 +35,37 @@ function App() {
       <TeamMember name="ekkarat" role="COO" image={member2} />
       <TeamMember name="isoon" role="CTO" image={member3} />
       <TeamMember name="pk" role="Invester" image={member1} />
-    </div>
+    </div> */}
 
-    <div  style={{width:"200px" , padding:"20px"}}>
+    {/* <div  style={{width:"200px" , padding:"20px"}}>
       <RoundButton >Generate</RoundButton>
-    </div>
+      <RoundCornerButton>Create</RoundCornerButton>
+    </div> */}
 
-    <div style={{width:"200px" , padding:"20px"}}>
+    {/* <div style={{width:"200px" , padding:"20px"}}>
      <SearchField icon={iconSearch}/>
     </div> */}
 
-      <ProjectList items={[{title:"hello" } , {title:"test"}]} onSelect={(id,item)=> console.log(id,item)} onMore={(id,item)=> console.log(id,item)} />
+    {/* <Modal onClose={()=>setOpen(false)} show={open}>test</Modal>
+    <Layout>
+      <SideBar shadow width={size+"px"}>
+        <RoundButton onClick={()=>setOpen(true)} >Generate</RoundButton>
+      </SideBar>
+      <Content>
+        <RoundButton onClick={()=>{setSize(size==="200" ? "0" : "200")}} >Generate</RoundButton>
+      </Content>
+    </Layout> */}
+
+    {/* <RatioField title="import socket.io" />
+    <RatioField title="import kuy yai mak" />
+    <SelectionField title="String" />
+    <SelectionField title="Number" active /> */}
+
+      {/* <ProjectList items={[{title:"hello" } , {title:"test"}]} onSelect={(id,item)=> console.log(id,item)} onMore={(id,item)=> console.log(id,item)} /> */}
+
+      {/* <MenuIcon image={iconSearch} name="test" /> */}
+
+      <SchemaTable />
 
     </div>
     
