@@ -15,6 +15,7 @@ import Content from './components/Content'
 import Layout from './components/Layout';
 import Modal from './components/Modal';
 import RatioField from './components/RatioField';
+import SelectionField from './components/SelectionField';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
   let [open , setOpen] = useState(true)
 
   return (
-  <Layout>
+    <div>
 
     {/* <h1 style={{margin:"0 0 0 15%"}}>Our team</h1>
 
@@ -41,9 +42,9 @@ function App() {
      <SearchField icon={iconSearch}/>
     </div> */}
 
-    <RatioField title="hello" />
+      <SelectionField title="hello" active />
 
-  </Layout>
+    </div>
     
   );
 }

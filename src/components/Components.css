@@ -331,6 +331,30 @@
   display: block;
 }
 
+.selection-field-container {
+  padding: 12px;
+  background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.selection-field-container.active {
+  color: white;
+  background-color: #2196F3;
+}
+
 /* Column */
 .column {
   -ms-flex-preferred-size: 33.33333%;
